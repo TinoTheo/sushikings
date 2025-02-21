@@ -1,0 +1,27 @@
+<nav class="main-nav" aria-label="Main navigation">
+  <div class="main-nav__container">
+<a href="#hero" class="main-nav__brand" {{on "click" this.handleScroll}}>
+      <span class="main-nav__brand-primary">SUSHI</span>
+      <span class="main-nav__brand-secondary">MASTER</span>
+    </a>
+
+
+    <button 
+      type="button" 
+      class="main-nav__hamburger" 
+      aria-expanded="{{if this.isMenuOpen 'true' 'false'}}"
+      {{on "click" this.toggleMenu}}
+    >
+      <span class="main-nav__hamburger-line"></span>
+      <span class="main-nav__hamburger-line"></span>
+      <span class="main-nav__hamburger-line"></span>
+    </button>
+
+    <div class="main-nav__links {{if this.isMenuOpen 'main-nav__links--active'}}">
+      <a href="#about" class="main-nav__link" {{on "click" this.handleScroll}}>About</a>
+      <a href="#experience" class="main-nav__link" {{on "click" this.handleScroll}}>Experience</a>
+      <a href="#gallery" class="main-nav__link" {{on "click" this.handleScroll}}>Gallery</a>
+      <a href="#contact" class="main-nav__link main-nav__link--cta" {{on "click" this.handleScroll}}>Book Consultation</a>
+    </div>
+  </div>
+</nav>

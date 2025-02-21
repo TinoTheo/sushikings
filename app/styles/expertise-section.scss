@@ -1,0 +1,81 @@
+$primary: #262626;
+$accent-red: #a61f12;
+$text-primary: #98a0a6;
+$text-secondary:rgb(255, 255, 255);
+$accent-olive: #677310;
+
+// Expertise Section
+.expertise {
+    padding: 6rem 2rem;
+    background: $primary;
+  
+    &__heading {
+      text-align: center;
+      margin-bottom: 4rem;
+  
+      &-text {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5rem;
+        color: $text-primary;
+        display: block;
+        margin-bottom: 1rem;
+      }
+  
+      &-line {
+        display: block;
+        width: 120px;
+        height: 2px;
+        background: $accent-olive;
+        margin: 0 auto;
+      }
+    }
+  
+    &__grid {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+  
+    &__card {
+      background: lighten($primary, 5%);
+      padding: 2rem;
+      border-radius: 4px;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  
+    &__icon-container {
+      width: 60px;
+      height: 60px;
+      background: rgba($accent-red, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+  
+    &__icon {
+      width: 30px;
+      height: 30px;
+      fill: $accent-red;
+    }
+  
+    &__title {
+      color: $text-primary;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+  
+    &__description {
+      color: $text-secondary;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+  }
+  

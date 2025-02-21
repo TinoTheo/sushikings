@@ -1,0 +1,17 @@
+@use 'navbar';
+@use   'hero-section';
+@use   'about-section';
+@use   'gallery-section';
+@use   'expertise-section';
+@use   'lightbox';
+@use    'footer';
+@use   'contact-section';
+
+body{
+    margin:0;
+    padding:0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }

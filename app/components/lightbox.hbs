@@ -1,0 +1,37 @@
+<div class="lightbox {{if this.isVisible 'lightbox--visible'}}" role="dialog" aria-modal="true">
+  <div class="lightbox__backdrop" {{on "click" this.close}}></div>
+  
+  <div class="lightbox__content">
+    <button class="lightbox__close" type="button" {{on "click" this.close}}>
+      &times;
+    </button>
+
+    {{#if this.currentItem}}
+      <img 
+        src="{{this.currentItem.image}}" 
+        alt="{{this.currentItem.alt}}" 
+        class="lightbox__image"
+      />
+      
+      <div class="lightbox__info">
+        <h3 class="lightbox__title">{{this.currentItem.name}}</h3>
+        <p class="lightbox__description">{{this.currentItem.ingredients}}</p>
+      </div>
+
+      <button 
+        class="lightbox__nav lightbox__nav--prev" 
+        type="button" 
+        {{on "click" this.prevImage}}
+      >
+        ‹
+      </button>
+      <button 
+        class="lightbox__nav lightbox__nav--next" 
+        type="button" 
+        {{on "click" this.nextImage}}
+      >
+        ›
+      </button>
+    {{/if}}
+  </div>
+</div>

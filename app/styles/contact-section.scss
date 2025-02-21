@@ -1,0 +1,181 @@
+// app/styles/components/_contact.scss
+$primary: #262626;
+$accent-red: #a61f12;
+$text-primary: #98a0a6;
+$text-secondary:rgb(252, 252, 252);
+$accent-olive: #677310;
+
+.contact {
+    background: lighten($primary, 5%);
+    padding: 6rem 2rem;
+    position: relative;
+  }
+  
+  .contact__divider {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    overflow: hidden;
+  
+    .contact__wave {
+      width: 100%;
+      height: 100%;
+      color: lighten($primary, 5%);
+      transform: rotate(180deg);
+      animation: waveFlow 15s linear infinite;
+    }
+  }
+  
+  .contact__heading {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .contact__title {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: $text-primary;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact__subtitle {
+    display: block;
+    font-size: 1.1rem;
+    color: $text-secondary;
+    letter-spacing: 0.1em;
+  }
+  
+  .contact__grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+  
+  // Form Styles
+  .contact__form {
+    .form__group {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+  
+    .form__label {
+      display: block;
+      color: $text-primary;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+  
+    .form__input,
+    .form__textarea {
+      width: 100%;
+      padding: 1rem 1rem 1rem 2.5rem;
+      background: $primary;
+      border: 1px solid lighten($primary, 15%);
+      color: $text-primary;
+      font-family: inherit;
+      transition: all 0.3s ease;
+  
+      &:focus {
+        border-color: $accent-olive;
+        outline: none;
+        box-shadow: 0 0 0 2px rgba($accent-olive, 0.2);
+      }
+    }
+  
+    .form__icon {
+      position: absolute;
+      left: 1rem;
+      bottom: 1.1rem;
+      color: $text-secondary;
+      font-size: 1.1rem;
+    }
+  
+    .form__submit {
+      background: $accent-red;
+      color: white;
+      border: none;
+      padding: 1rem 2.5rem;
+      font-family: inherit;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      transition: all 0.3s ease;
+  
+      &:hover {
+        background: darken($accent-red, 10%);
+        transform: translateY(-2px);
+      }
+    }
+  }
+  
+  // Contact Info Styles
+  .contact__info {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .info__card {
+    background: $primary;
+    padding: 2rem;
+    border-left: 3px solid $accent-olive;
+  }
+  
+  .info__icon {
+    color: $accent-red;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .info__title {
+    color: $text-primary;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .info__text {
+    color: $text-secondary;
+    line-height: 1.6;
+  }
+  
+  .info__divider {
+    width: 50px;
+    height: 1px;
+    background: $accent-olive;
+    margin: 1.5rem 0;
+  }
+  
+  .info__social {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  
+    .social__link {
+      color: $text-primary;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: $accent-red;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact__grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .contact__divider {
+      top: -50px;
+      height: 50px;
+    }
+  }

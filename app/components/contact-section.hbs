@@ -1,0 +1,116 @@
+{{! app/components/contact-section.hbs }}
+<section id="contact" class="contact" aria-labelledby="contact-heading">
+  <div class="contact__divider">
+    <svg viewBox="0 0 1440 120" class="contact__wave">
+      <path fill="currentColor" d="M0 96l48-16C96 64 192 32 288 32s192 64 288 64 192-64 288-64 192 32 288 48l48 16v96H0z"></path>
+    </svg>
+  </div>
+
+  <div class="contact__container">
+    <h2 class="contact__heading">
+      <span class="contact__title">Omakase Inquiry</span>
+      <span class="contact__subtitle">Experience Edomae Mastery</span>
+    </h2>
+
+    <div class="contact__grid">
+      {{! Contact Form }}
+{{! Update form elements with bindings }}
+<form class="contact__form" {{on "submit" this.handleSubmit}}>
+  <div class="form__group">
+    <input 
+      type="text" 
+      id="name" 
+      name="name"
+      class="form__input"
+      placeholder="Hiroshi Yamamoto"
+      value={{this.formData.name}}
+      {{on "input" this.updateFormData}}
+      required
+    >
+    <i class="fa-solid fa-user form__icon"></i>
+  </div>
+
+  <div class="form__group">
+    <input 
+      type="email" 
+      id="email" 
+      name="email"
+      class="form__input"
+      placeholder="kaiseki@example.com"
+      value={{this.formData.email}}
+      {{on "input" this.updateFormData}}
+      required
+    >
+    <i class="fa-solid fa-envelope form__icon"></i>
+  </div>
+
+  <div class="form__group">
+    <textarea 
+      id="message" 
+      name="message"
+      class="form__textarea"
+      placeholder="Dietary restrictions, preferred ingredients..."
+      rows="5"
+      {{on "input" this.updateFormData}}
+      required
+    >{{this.formData.message}}</textarea>
+    <i class="fa-solid fa-pen-nib form__icon"></i>
+  </div>
+
+  <button 
+    type="submit" 
+    class="form__submit" 
+    disabled={{this.isSubmitDisabled}}
+  >
+    {{#if this.isLoading}}
+      <i class="fa-solid fa-spinner fa-spin"></i>
+    {{/if}}
+    <span>{{this.submitButtonText}}</span>
+    <i class="fa-solid fa-fish"></i>
+  </button>
+
+  {{#if this.showSuccess}}
+    <div class="form-success">
+      Consultation request received successfully!
+    </div>
+  {{/if}}
+
+  {{#if this.showError}}
+    <div class="form-error">
+      Submission failed. Please try again.
+    </div>
+  {{/if}}
+</form>
+
+      {{! Contact Info }}
+      <div class="contact__info">
+        <div class="info__card">
+          <i class="fa-solid fa-map-marker-alt info__icon"></i>
+          <h3 class="info__title">Atelier Location</h3>
+          <p class="info__text">1-2-3 Ginza, Chuo City<br>Tokyo 104-0061</p>
+          <div class="info__divider"></div>
+        </div>
+
+        <div class="info__card">
+          <i class="fa-solid fa-clock info__icon"></i>
+          <h3 class="info__title">Service Hours</h3>
+          <p class="info__text">Wednesday - Sunday<br>17:00 - 23:00</p>
+          <div class="info__divider"></div>
+        </div>
+
+        <div class="info__social">
+          <a href="#" class="social__link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="social__link">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a href="#" class="social__link">
+            <i class="fa-solid fa-phone-volume"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

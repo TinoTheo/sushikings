@@ -1,0 +1,90 @@
+{{! app/components/site-footer.hbs }}
+<footer class="site-footer">
+  {{! Wavy divider }}
+  <div class="footer-divider">
+<svg class="footer-wave" viewBox="0 0 1440 120" preserveAspectRatio="none">
+  <path fill="#98a0a6" d="M0 96l48-10.7C96 75 192 53 288 58.7 384 64 480 96 576 90.7 672 85 768 43 864 42.7 960 43 1056 85 1152 96 1248 75 1344 21 1392 5.3L1440 0v120H0z"></path>
+</svg>
+  </div>
+
+  <div class="footer-content">
+    <div class="footer-grid">
+      {{! About Column }}
+      <div class="footer-col">
+        <h3 class="footer-heading">
+          <span class="footer-brand">SUSHI</span>
+          <span class="footer-brand-accent">MASTER</span>
+        </h3>
+        <p class="footer-text">
+          Preserving Edo-era traditions while innovating modern culinary art. 
+          Certified by the Japan Sushi Association.
+        </p>
+      </div>
+
+      {{! Links Column }}
+      <div class="footer-col">
+        <h4 class="footer-subheading">Culinary Navigation</h4>
+        <ul class="footer-links">
+          <li><LinkTo @route="about" class="footer-link">Omakase Journey</LinkTo></li>
+          <li><LinkTo @route="menu" class="footer-link">Seasonal Menu</LinkTo></li>
+          <li><LinkTo @route="gallery" class="footer-link">Art Gallery</LinkTo></li>
+          <li><LinkTo @route="contact" class="footer-link">Concierge</LinkTo></li>
+        </ul>
+      </div>
+
+      {{! Contact Column }}
+      <div class="footer-col">
+        <h4 class="footer-subheading">Master's Atelier</h4>
+        <div class="footer-contact">
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-map-pin footer-icon"></i>
+            <span>1-2-3 Ginza, Chuo City, Tokyo</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope footer-icon"></i>
+            <span>kaiseki@sushimaster.jp</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone footer-icon"></i>
+            <span>+81 3-1234-5678</span>
+          </div>
+        </div>
+      </div>
+
+      {{! Social Column }}
+      <div class="footer-col">
+        <h4 class="footer-subheading">Follow the Craft</h4>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="footer-social-link">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="#" class="footer-social-link">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="#" class="footer-social-link">
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+        </div>
+        <div class="footer-newsletter">
+          <input type="email" placeholder="Subscribe for Kaiseki Notes" 
+                 class="footer-input">
+          <button class="footer-button">
+            <i class="fa-solid fa-fish"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    {{! Copyright Bar }}
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2023 Sushi Mastery Institute</span>
+      <div class="footer-legal">
+        <a href="#" class="footer-legal-link">Omakase Terms</a>
+        <a href="#" class="footer-legal-link">Privacy Kaiseki</a>
+      </div>
+    </div>
+  </div>
+</footer>

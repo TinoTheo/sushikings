@@ -1,0 +1,178 @@
+// About 
+$primary: #262626;
+$accent-red: #a61f12;
+$text-primary: #98a0a6;
+$text-secondary:rgb(255, 255, 255);
+$accent-olive: #677310;
+
+
+.about {
+    padding: 8rem 2rem;
+    background: lighten($primary, 3%);
+  
+    &__container {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+  
+    &__heading {
+      &-text {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5rem;
+        color: $text-primary;
+        display: block;
+        margin-bottom: 1.5rem;
+      }
+  
+      &-line {
+        display: block;
+        width: 80px;
+        height: 2px;
+        background: $accent-olive;
+      }
+    }
+  
+    &__description {
+      color: $text-secondary;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin: 2rem 0;
+      max-width: 600px;
+    }
+  
+    &__stats {
+      display: flex;
+      gap: 4rem;
+      margin-top: 3rem;
+    }
+  
+    &__stat {
+      &-number {
+        display: block;
+        font-size: 2.5rem;
+        color: $accent-red;
+        font-weight: 500;
+      }
+  
+      &-label {
+        color: $text-primary;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+    }
+  
+    &__image-frame {
+      border: 3px solid $accent-red;
+      padding: 1rem;
+      position: relative;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        right: -15px;
+        bottom: -15px;
+        border: 2px solid rgba($accent-olive, 0.3);
+        z-index: -1;
+      }
+    }
+  
+    &__image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  
+    @media (max-width: 768px) {
+      &__container {
+        grid-template-columns: 1fr;
+      }
+      
+      &__image-container {
+        order: -1;
+      }
+    }
+  }
+
+  // Alternate section styling
+.about--alt {
+  background: lighten($primary, 5%);
+  
+  .about__heading-line {
+    background: $accent-olive;
+  }
+}
+
+.about--reverse {
+  .about__container {
+    flex-direction: row-reverse;
+  }
+}
+
+// Timeline component
+.about__timeline {
+  border-left: 2px solid $accent-red;
+  margin: 2rem 0;
+  padding-left: 2rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: -2.4rem;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: $accent-red;
+    border-radius: 50%;
+  }
+}
+
+.timeline-year {
+  color: $accent-red;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+// Innovation list
+.about__innovations {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.innovation-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+  .innovation-icon {
+    color: $accent-olive;
+    font-size: 1.5rem;
+    width: 30px;
+  }
+}
+
+// Image frame variations
+.about__image-frame--vintage {
+  &::before {
+    border-color: rgba($accent-red, 0.2);
+  }
+}
+
+.about__image-frame--modern {
+  border-color: $accent-olive;
+  
+  &::before {
+    border-color: rgba($accent-olive, 0.3);
+  }
+}

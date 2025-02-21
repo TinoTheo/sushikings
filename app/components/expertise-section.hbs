@@ -1,0 +1,21 @@
+<section id="expertise" class="expertise" aria-labelledby="expertise-heading">
+  <div class="expertise__container">
+    <h2 id="expertise-heading" class="expertise__heading">
+      <span class="expertise__heading-text">Culinary Virtuosity</span>
+      <span class="expertise__heading-line"></span>
+    </h2>
+    
+    <div class="expertise__grid">
+      {{#each this.expertiseItems as |item|}}
+{{! app/components/expertise-section.hbs }}
+<article class="expertise__card">
+  <div class="expertise__icon-container">
+    <i class="fa-solid fa-{{item.icon}}" style="color: #a61f12;"></i>
+  </div>
+  <h3 class="expertise__title">{{item.title}}</h3>
+  <p class="expertise__description">{{item.description}}</p>
+</article>
+      {{/each}}
+    </div>
+  </div>
+</section>  
