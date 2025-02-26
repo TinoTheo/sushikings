@@ -12,6 +12,9 @@ $accent-olive: #677310;
     position: relative;
     
   }
+ .footer-brand-logo {
+    height: 5rem;
+  }
   
   .footer-divider {
     position: absolute;
@@ -189,6 +192,9 @@ $accent-olive: #677310;
   @media (max-width: 768px) {
     .footer-grid {
       grid-template-columns: 1fr;
+    }
+    .footer-brand-logo {
+      height: 3rem;
     }
     
     .footer-bottom {
