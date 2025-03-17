@@ -8,7 +8,7 @@ $accent-olive: #677310;
 
 .about {
     padding: 8rem 2rem;
-    background: lighten($primary, 3%);
+    background: $primary;
   
     &__container {
       max-width: 1440px;
@@ -78,7 +78,7 @@ $accent-olive: #677310;
         left: -15px;
         right: -15px;
         bottom: -15px;
-        border: 2px solid rgba($accent-olive, 0.3);
+        border: 2px solid $accent-olive;
         z-index: -1;
       }
     }
@@ -102,7 +102,7 @@ $accent-olive: #677310;
 
   // Alternate section styling
 .about--alt {
-  background: lighten($primary, 5%);
+  background: $primary;
   
   .about__heading-line {
     background: $accent-olive;
@@ -139,9 +139,13 @@ $accent-olive: #677310;
 }
 
 .timeline-year {
-  color: $accent-red;
+  color: $text-primary;
   font-weight: 500;
   margin-bottom: 0.5rem;
+}
+.timeline-content {
+  color: $text-secondary;
+
 }
 
 // Innovation list
@@ -155,6 +159,7 @@ $accent-olive: #677310;
   display: flex;
   align-items: center;
   gap: 1rem;
+  color: $accent-olive;
   
   .innovation-icon {
     color: $accent-olive;
@@ -166,7 +171,7 @@ $accent-olive: #677310;
 // Image frame variations
 .about__image-frame--vintage {
   &::before {
-    border-color: rgba($accent-red, 0.2);
+    border-color: $accent-red;
   }
 }
 
@@ -174,6 +179,6 @@ $accent-olive: #677310;
   border-color: $accent-olive;
   
   &::before {
-    border-color: rgba($accent-olive, 0.3);
+    border-color: $accent-olive;
   }
 }

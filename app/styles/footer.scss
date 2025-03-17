@@ -135,7 +135,7 @@ $accent-olive: #677310;
     
     .footer-input {
       flex: 1;
-      background: lighten($primary, 5%);
+      background: $primary;
       border: 1px solid $accent-olive;
       color: $text-primary;
       padding: 0.8rem;
@@ -155,13 +155,13 @@ $accent-olive: #677310;
       transition: background 0.3s ease;
       
       &:hover {
-        background: darken($accent-red, 10%);
+        background: $accent-red;
       }
     }
   }
   
   .footer-bottom {
-    border-top: 1px solid lighten($primary, 10%);
+    border-top: 1px solid $primary;
     padding-top: 2rem;
     margin-top: 3rem;
     display: flex;

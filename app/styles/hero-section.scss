@@ -10,7 +10,7 @@ $accent-olive: #677310;
     background: linear-gradient(
         to right,
         rgba($primary, 0.92) 45%,
-        rgba(darken($primary, 10%), 0.88) 100%
+        rgba($primary, 0.50) 100%
       ),
       url('/images/restaurant.jpg') center/cover;
     // ... rest of the styles
@@ -96,7 +96,7 @@ $accent-olive: #677310;
         border: 2px solid $accent-red;
   
         &:hover {
-          background: darken($accent-red, 8%);
+          background: $accent-red;
           transform: translateY(-2px);
         }
       }
@@ -107,8 +107,8 @@ $accent-olive: #677310;
         border: 2px solid $accent-olive;
   
         &:hover {
-          background: rgba($accent-olive, 0.1);
-          color: lighten($text-primary, 15%);
+          background: $accent-olive;
+          color: $text-primary;
         }
       }
     }
@@ -122,7 +122,7 @@ $accent-olive: #677310;
       background: linear-gradient(
         45deg,
         rgba($accent-olive, 0.15) 0%,
-        rgba($accent-red, 0.08) 100%
+        $accent-red 100%
       );
       clip-path: polygon(100% 0, 0 100%, 100% 100%);
       z-index: 1;

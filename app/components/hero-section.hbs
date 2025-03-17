@@ -10,12 +10,12 @@
     <p class="hero__subtitle">Crafting Edible Art Through Centuries-Old Tradition</p>
 
     <div class="hero__cta-group">
-      <LinkTo @route="gallery" class="hero__cta hero__cta--primary">
-        View Masterpieces
-      </LinkTo>
-      <LinkTo @route="about" class="hero__cta hero__cta--secondary">
-        My Philosophy
-      </LinkTo>
+  <a href="#gallery" class="hero__cta hero__cta--primary" {{on "click" this.handleScroll}}>
+       My Masterpiece
+      </a>
+  <a href="#about" class="hero__cta hero__cta--secondary" {{on "click" this.handleScroll}}>
+       My Philosophy
+      </a>
     </div>
   </div>
 

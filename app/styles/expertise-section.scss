@@ -39,7 +39,7 @@ $accent-olive: #677310;
     }
   
     &__card {
-      background: lighten($primary, 5%);
+      background: $primary;
       padding: 2rem;
       border-radius: 4px;
       transition: transform 0.3s ease;

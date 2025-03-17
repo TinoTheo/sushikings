@@ -7,7 +7,7 @@ $accent-olive: #677310;
 
 .gallery {
     padding: 6rem 2rem;
-    background: lighten($primary, 3%);
+    background: $primary;
   
     &__heading {
       text-align: center;
@@ -178,7 +178,7 @@ $accent-olive: #677310;
       transition: all 0.3s ease;
       
       &:hover {
-        background: darken($accent-red, 10%);
+        background: $accent-red;
         transform: translateY(-2px);
       }
     }

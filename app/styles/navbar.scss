@@ -145,7 +145,6 @@ $accent-olive: #677310;
   @media (max-width: 768px) {
     
   &__brand-logo {
-    
     height: 3rem;
   }
 
@@ -183,6 +182,8 @@ $accent-olive: #677310;
 
     &__links {
       position: absolute;
+      box-sizing: border-box;
+      width: 100%;
       top: 100%;
       left: 0;
       right: 0;
@@ -195,12 +196,13 @@ $accent-olive: #677310;
     }
 
     &__link {
-      width: 100%;
+
       text-align: center;
       padding: 0.5rem 0;
 
       &--cta {
         margin-top: 1rem;
+        padding: 1rem;
       }
     }
   }

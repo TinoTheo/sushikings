@@ -7,10 +7,18 @@
 @use    'footer';
 @use   'contact-section';
 
-body{
-    margin:0;
-    padding:0;
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
+  // Remove existing body styles and modify:
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: none;
+    width: 100%;
+  }
+
 
 html {
     scroll-behavior: smooth;
