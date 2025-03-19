@@ -39,9 +39,10 @@ $accent-olive: #677310;
     }
   
     &__card {
-      background: $primary;
+      background: lighten($primary, 5%);
       padding: 2rem;
       border-radius: 4px;
+      
       transition: transform 0.3s ease;
   
       &:hover {
