@@ -25,6 +25,23 @@ export default class LightboxComponent extends Component {
     document.body.style.overflow = '';
   }
 
+  @action
+prevImage() {
+  this.currentIndex = Math.max(0, this.currentIndex - 1);
+}
+
+@action
+nextImage() {
+  this.currentIndex = Math.min(this.args.items.length - 1, this.currentIndex + 1);
+}
+
+@action
+handleKeydown(event) {
+  if (event.key === 'Escape') this.close();
+  if (event.key === 'ArrowLeft') this.prevImage();
+  if (event.key === 'ArrowRight') this.nextImage();
+}
+
   // Add swipe handling for mobile
   @action
   handleSwipe(event) {

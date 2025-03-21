@@ -1,6 +1,11 @@
 <div class="lightbox {{if this.isVisible 'lightbox--visible'}}" role="dialog" aria-modal="true">
-  <div class="lightbox__backdrop" {{on "click" this.close}}></div>
-  
+  <button 
+    type="button" 
+    class="lightbox__backdrop" 
+    {{on "click" this.close}}
+    aria-label="Close lightbox"
+  ></button>
+    
   <div class="lightbox__content">
     <button class="lightbox__close" type="button" {{on "click" this.close}}>
       &times;

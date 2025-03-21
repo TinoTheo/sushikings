@@ -23,7 +23,7 @@
   {{else}}
     <div class="gallery__grid">
       {{#each this.galleryData.items as |item index|}}
-        <figure 
+        <div
           class="gallery__item" 
           role="button"
           {{on "click" (fn this.handleImageClick index)}}
@@ -38,7 +38,7 @@
             <span class="gallery__dish-name">{{item.name}}</span>
             <span class="gallery__ingredients">{{item.ingredients}}</span>
           </figcaption>
-        </figure>
+        </div>
       {{/each}}
     </div>
     <Lightbox 

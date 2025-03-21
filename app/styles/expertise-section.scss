@@ -57,14 +57,19 @@ $accent-olive: #677310;
       border-radius: 50%;
       display: flex;
       align-items: center;
+      text-align: center;
       justify-content: center;
       margin-bottom: 1.5rem;
     }
   
     &__icon {
+      position: relative;
+      top: 10px;
       width: 30px;
       height: 30px;
       fill: $accent-red;
+      color: $accent-red;
+      align-items: center;
     }
   
     &__title {

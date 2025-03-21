@@ -11,12 +11,11 @@ export default class NavbarComponent extends Component {
     event.preventDefault();
     const targetId = event.target.getAttribute('href');
     const targetElement = document.querySelector(targetId);
-    
     if (targetElement) {
       this.isMenuOpen = false;
       targetElement.scrollIntoView({
         behavior: 'smooth',
-        block: 'start'
+        block: 'start',
       });
       
       // Update URL without refreshing
@@ -37,14 +36,14 @@ export default class NavbarComponent extends Component {
   }
 
   // In navbar component JS
-constructor() {
-  super(...arguments);
-  this.observer = new IntersectionObserver(this.handleIntersect, {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.5
-  });
-}
+  constructor() {
+    super(...arguments);
+    this.observer = new IntersectionObserver(this.handleIntersect, {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    });
+  }
 
 willDestroy() {
   super.willDestroy();
@@ -65,8 +64,8 @@ handleIntersect(entries) {
 }
 
 @action
-setupObserver(element) {
-  document.querySelectorAll('section[id]').forEach(section => {
+setupObserver() {
+  document.querySelectorAll('section[id]').forEach((section) => {
     this.observer.observe(section);
   });
 }

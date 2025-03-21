@@ -5,45 +5,42 @@ export default class ExpertiseSectionComponent extends Component {
     {
       title: 'Knife Techniques',
       description: 'Techniques for using knives...',
-      icon: 'utensils'
+      icon: 'utensils',
     },
     {
       title: 'Fishing Techniques',
       description: 'Techniques for catching fish...',
-      icon: 'fish'
+      icon: 'fish',
     },
     {
       title: 'Rice Preparation',
       description: 'Techniques for preparing rice...',
-      icon: 'bowl-rice'
+      icon: 'bowl-rice',
     },
     {
       title: 'Omakase Techniques',
       description: 'Techniques for making omakase...',
-      icon: 'bowl-food'
+      icon: 'bowl-food',
     },
     {
       title: 'Sakura Techniques',
       description: 'Techniques for making sakura...',
-      icon: 'leaf'
+      icon: 'leaf',
     },
     {
       title: 'Etiquette',
       description: 'Etiquette for sushi-making...',
-      icon: 'utensils'
+      icon: 'utensils',
     },
     {
       title: 'Sakura Techniques',
       description: 'Techniques for making sakura...',
-      icon: 'leaf'
+      icon: 'leaf',
     },
     {
       title: 'Etiquette',
       description: 'Etiquette for sushi-making...',
-      icon: 'utensils'
-    }
-    
-    
+      icon: 'utensils',
+    },
   ];
-
 }
