@@ -6,7 +6,7 @@ export default class GalleryDataService extends Service {
 
   async load() {
     try {
-      let response = await fetch('/data/gallery.json');
+      let response = await fetch('assets/data/gallery.json');
       if (!response.ok) {
         throw new Error(`Failed to load gallery data: ${response.statusText}`);
       }
