@@ -1,7 +1,7 @@
 {
     "items": [
       {
-        "image": "public/images/gallery/sushi-9.jpg",
+        "image": "/images/gallery/sushi-9.jpg",
         "alt": "Signature appetizer",
         "name": "Golden Harvest",
         "ingredients": "Heirloom tomatoes, burrata, basil essence"
