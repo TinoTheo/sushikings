@@ -1,3 +1,6 @@
+
+
+
 <section id="gallery" class="gallery" aria-labelledby="gallery-heading">
   <h2 id="gallery-heading" class="gallery__heading">
     <span class="gallery__heading-text">Edible Artistry</span>
@@ -29,7 +32,7 @@
           {{on "click" (fn this.handleImageClick index)}}
         >
           <img 
-            src="{{item.image}}" 
+            src="{{this.rootURL}}{{item.image}}" 
             alt="{{item.alt}}" 
             class="gallery__image"
             loading="lazy"

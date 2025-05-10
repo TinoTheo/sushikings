@@ -12,10 +12,13 @@ export default class GallerySectionComponent extends Component {
     return config.rootURL;
   }
 
+
   constructor() {
     super(...arguments);
+    console.log('Root URL:', this.rootURL); // Add this
     this.galleryData.load();
   }
+  
   @action
   retryLoad() {
     this.galleryData.load();

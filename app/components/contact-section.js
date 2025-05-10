@@ -49,7 +49,6 @@ export default class ContactSectionComponent extends Component {
       if (!response.ok) {
         throw new Error('Failed to submit');
       }
-
       this.showSuccess = true;
       this.formData = { name: '', email: '', message: '' };
     } catch (error) {
