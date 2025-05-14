@@ -15,7 +15,7 @@ export default class GallerySectionComponent extends Component {
 
   constructor() {
     super(...arguments);
-    console.log('Root URL:', this.rootURL); // Add this
+    console.log('Root URL:', this.rootURL); 
     this.galleryData.load();
   }
   
