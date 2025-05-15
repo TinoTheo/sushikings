@@ -18,7 +18,7 @@ export default class ContactSectionComponent extends Component {
   }
 
   get submitButtonText() {
-    return this.isLoading ? 'Sending...' : 'Request Consultation';
+    return this.isLoading ? 'Sending...' : 'Get a quote';
   }
   
 
