@@ -1,7 +1,7 @@
 {
     "items": [
       {
-        "image": "images/sushi-3.jpeg",
+        "image": "images/sushi-9.jpeg",
         "alt": "Signature appetizer",
         "name": "Golden Harvest",
         "ingredients": "Heirloom tomatoes, burrata, basil essence"
@@ -13,19 +13,19 @@
         "ingredients": "Scallops, squid ink risotto, sea herbs"
       },
       {
-        "image": "images/sushi-3.jpeg",
+        "image": "images/sushi-8.jpeg",
         "alt": "Signature appetizer",
         "name": "Nigiri",
         "ingredients": "Heirloom tomatoes, burrata, basil essence"
       },
       {
-        "image": "images/sushi-4.jpeg",
+        "image": "images/sushi-3.jpeg",
         "alt": "Main course",
         "name": "Maki",
         "ingredients": "Scallops, squid ink risotto, sea herbs"
       },
       {
-        "image": "images/sushi-5.jpeg",
+        "image": "images/sushi-4.jpeg",
         "alt": "Signature appetizer",
         "name": "Temaki",
         "ingredients": "Heirloom tomatoes, burrata, basil essence"

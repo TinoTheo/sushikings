@@ -1,10 +1,34 @@
-# sushikings
+# Sushikings
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a web application project. It's a website for a sushi restaurant that includes various sections like About, Contact, Gallery, and Expertise.
+
+## Technologies and Programming Languages Involved
+
+- Ember.js (evident from .hbs Handlebars templates and components)
+- HTML (templates and structure)
+- CSS (styling through class names)
+- JavaScript (interactivity through {{on}} actions)
+- Font Awesome (for icons)
+- Responsive Design (mobile-friendly navigation menu)
+
+## Main Goal/Purpose
+The primary purpose of the project is to create an interactive and modern website for Sushi Kings that:
+
+- Showcases the restaurant's offerings and philosophy
+- Provides information about the chef's background and expertise
+- Allows customers to book consultations or make inquiries
+- Displays the restaurant's gallery and location
+- Engages users with a visually appealing and responsive design
+
+## Key Features
+- Responsive Navigation: Mobile-friendly hamburger menu
+- Smooth Scrolling: Navigation links scroll to different sections
+- Contact Form: With validation and submission handling
+- Social Media Integration: Links to Instagram and other platforms
+- Content-Rich Sections: About, Experience, Gallery, and Contact sections
+- Visual Appeal: Use of images, icons, and decorative eleme
 
 ## Prerequisites
-
 You will need the following things properly installed on your computer.
 
 - [Git](https://git-scm.com/)
