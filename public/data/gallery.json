@@ -1,49 +1,49 @@
 {
     "items": [
       {
-        "image": "static/images/sushi-3.jpg",
+        "image": "images/sushi-3.jpg",
         "alt": "Signature appetizer",
         "name": "Golden Harvest",
         "ingredients": "Heirloom tomatoes, burrata, basil essence"
       },
       {
-        "image": "static/images/sushi-2.jpg",
+        "image": "images/sushi-2.jpg",
         "alt": "Main course",
         "name": "Ocean Symphony",
         "ingredients": "Scallops, squid ink risotto, sea herbs"
       },
       {
-        "image": "static/images/sushi-3.jpg",
+        "image": "images/sushi-3.jpg",
         "alt": "Signature appetizer",
         "name": "Nigiri",
         "ingredients": "Heirloom tomatoes, burrata, basil essence"
       },
       {
-        "image": "static/images/sushi-4.jpg",
+        "image": "images/sushi-4.jpg",
         "alt": "Main course",
         "name": "Maki",
         "ingredients": "Scallops, squid ink risotto, sea herbs"
       },
       {
-        "image": "static/images/sushi-5.jpg",
+        "image": "images/sushi-5.jpg",
         "alt": "Signature appetizer",
         "name": "Temaki",
         "ingredients": "Heirloom tomatoes, burrata, basil essence"
       },
       {
-        "image": "static/images/sushi-6.jpg",
+        "image": "images/sushi-6.jpg",
         "alt": "Main course",
         "name": "Muromachi",
         "ingredients": "Scallops, squid ink risotto, sea herbs"
       },
       {
-        "image": "static/images/sushi-7.jpg",
+        "image": "images/sushi-7.jpg",
         "alt": "Signature appetizer",
         "name": "Inari",
         "ingredients": "Heirloom tomatoes, burrata, basil essence"
       },
       {
-        "image": "static/images/sushi-8.jpg",
+        "image": "images/sushi-8.jpg",
         "alt": "Main course",
         "name": "Ocean Symphony",
         "ingredients": "Scallops, squid ink risotto, sea herbs"

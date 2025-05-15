@@ -25,7 +25,7 @@
     </div>
   {{else}}
     <div class="gallery__grid">
-      {{#each this.galleryData.items as |item index|}}
+      {{#each this.items as |item index|}}
         <div
           class="gallery__item" 
           role="button"
@@ -45,7 +45,7 @@
       {{/each}}
     </div>
     <Lightbox 
-      @items={{this.galleryData.items}} 
+      @items={{this.items}} 
       @selectedIndex={{this.lightboxIndex}}
     />
   {{/if}}
